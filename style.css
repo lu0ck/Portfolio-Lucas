@@ -1,0 +1,57 @@
+body{
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /*fundo branco*/
+    color: #333; /*cor do texto*/
+    line-height: 1.6;
+}
+.container{
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section{
+    padding: 80px 0;
+    opacity: 0; /*começa invisivel para animaçao*/
+    transform: translateY(50px); /*começa um pouco abaixo*/
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+section.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+h1, h2{
+    font-weight: bold;
+}
+h1{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #000; /*cor do titulo principal*/
+}
+#intro{
+    text-align: center;
+}
+#about{
+    background-color: #f8f8f8; /*cor de fundo para seçao sobre*/
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 10px;
+}
+a{
+    color: #333;
+    text-decoration: none; /*tira o tracejado azul do link*/
+    transition: color 0.3s; /*transiçao suave de cor*/
+}
+a:hover{
+    color: #cc5500; /*cor de destaque ao passar o mouse por cima*/
+}
+.social-link li{
+    display: inline-block;
+    margin-right: 20px;
+}
