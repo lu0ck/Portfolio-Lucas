@@ -8,6 +8,17 @@ body {
     line-height: 1.6;
 }
 
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Certifique-se de que o menu fique acima de outros elementos */
+    background-color: #101112; /* Cor de fundo do menu */
+    display: flex;
+    justify-content: center;
+}
+
 .main-container {
     display: flex;
     height: 100vh;
@@ -16,13 +27,13 @@ body {
 .fixed-section {
     background-color: #101112;
     color: #eee;
-    width: 25%;
     position: fixed;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
+    /* Adiciona padding superior */
     box-sizing: border-box;
     align-items: normal;
     min-height: 100vh;
@@ -34,7 +45,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 65vh;
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .profile-pic {
@@ -93,12 +105,11 @@ body {
 
 .scrollable-section {
     width: 75%;
-    /* Ajusta a largura para compensar a seção fixa */
-    margin-left: 25%;
-    /* Ajusta a margem para compensar a seção fixa */
     overflow-y: auto;
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
+    /* Adiciona padding superior */
     box-sizing: border-box;
+    margin-left: auto;
 }
 
 .container {
@@ -296,101 +307,63 @@ a:hover {
     gap: 20px;
     /* Espaço entre os botões */
 }
-/* inicio config menu */
-.navbar {
-    width: fit-content;
-    position: relative;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    background-color: #212121; /* Cor de fundo do box */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Espaçamento interno */
-}
 
-/*
-.navbar ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0;
+/* INICIO BARRA DE NAvegaçao */
+.navbar {
+    position: relative;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 auto;
 }
-*/
 
 .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    width: fit-content;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
-
-/*
-.navbar li{
-    margin-right: 10px;
-}
-*/
 
 .navbar li {
-    margin-bottom: 0px;
-    width: fit-content;
-    margin-right: 20px;
-    flex: none;
+    flex: 1;
     text-align: center;
+    margin: 0 15px; /* Adiciona margem horizontal */
 }
 
-.navbar a{
+.navbar a {
     color: #eee;
     text-decoration: none;
-    /*adicoes teste*/
     font-size: 20px;
-    /* Reduz o tamanho do ícone */
     display: flex;
-    flex-direction: row;
     align-items: center;
-    transition: transform 0.5s ease, color 0.3s ease;
-    width: 100%;
+    transition: transform 0.3s ease, color 0.3s ease;
     flex-direction: row;
-    justify-content: flex-start
-}
-
-.navbar span {
-    font-size: 0em;
-    /* Tamanho do texto inicial */
-    opacity: 0;
-    /* Texto invisível inicialmente */
-    transition: opacity 0.3s ease, font-size 0.3s ease;
-    /* Adiciona transição */
-    white-space: nowrap;
-    margin-left: 8px;
+    justify-content: center;
 }
 
 .navbar a:hover {
     color: #ff5722;
-    /* Vermelho no hover */
-    transform: scale(1.1);
-    /* Aumenta o tamanho do ícone em 10% */
+    transform: scale(1.05);
+}
+
+.navbar span {
+    font-size: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+    white-space: nowrap;
+    margin-left: 8px;
 }
 
 .navbar a:hover span {
     font-size: 0.8em;
-    /* Tamanho do texto no hover */
     opacity: 1;
-    /* Texto visível no hover */
 }
-
+/*BARRA DE NAVEGAÇAO FIM*/
 .contact-icon {
-    margin-right: 10px; /* Ajuste este valor conforme necessário */
+    margin-right: 0px;
 }
- /*fim adiçoes teste*/
-
-/* falta colocar hover quando passar o mouse por cima e mudar de cor com leve aumento */
-/* fim das config de menu. */
 
 #contact {
     background-color: #101112;
