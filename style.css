@@ -13,10 +13,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; /* Certifique-se de que o menu fique acima de outros elementos */
+    z-index: 100; /* o menu fique acima de outros elementos */
     background-color: #101112; /* Cor de fundo do menu */
     display: flex;
     justify-content: center;
+    padding: 15px 0;
 }
 
 .main-container {
@@ -313,7 +314,7 @@ a:hover {
     position: relative;
     background-color: #212121;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 17px 15px; /* Aumenta o padding vertical */
     margin: 0 auto;
 }
 
