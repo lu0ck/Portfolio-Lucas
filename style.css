@@ -307,6 +307,7 @@ a:hover {
     padding: 10px 0;       /* Espaçamento interno */
 }
 
+/*
 .navbar ul{
     list-style: none;
     display: flex;
@@ -314,15 +315,68 @@ a:hover {
     height: 100%;
     margin: 0;
 }
+*/
 
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: fit-content;
+}
+
+/*
 .navbar li{
     margin-right: 10px;
 }
-.navbar a{
-    color: white;
+*/
+
+.navbar li {
+    margin-bottom: 0px;
+    width: fit-content;
+    margin-right: 25px;
 }
 
+.navbar a{
+    color: #eee;
+    /*adicoes teste*/
+    font-size: 20px;
+    /* Reduz o tamanho do ícone */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 100%;
+    flex-direction: row;
+}
 
+.navbar span {
+    font-size: 0em;
+    /* Tamanho do texto inicial */
+    opacity: 0;
+    /* Texto invisível inicialmente */
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+    /* Adiciona transição */
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.navbar a:hover {
+    color: #ff5722;
+    /* Vermelho no hover */
+    transform: scale(1.1);
+    /* Aumenta o tamanho do ícone em 10% */
+}
+
+.navbar a:hover span {
+    font-size: 0.8em;
+    /* Tamanho do texto no hover */
+    opacity: 1;
+    /* Texto visível no hover */
+}
+ /*fim adiçoes teste*/
+
+/* falta colocar hover quando passar o mouse por cima e mudar de cor com leve aumento */
 /* fim das config de menu. */
 
 #contact {
