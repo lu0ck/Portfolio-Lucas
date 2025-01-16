@@ -216,13 +216,13 @@ h2 {
 }
 
 a {
-    color: #ff5722;
+    color: #ff2400;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff5722;
+    color: #ff2400;
 }
 
 .btn {
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #ff5722;
+    background-color: #ff2400;
     /* Cor vermelha */
     color: #fff;
     border: none;
@@ -245,7 +245,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #d83f0c;
+    background-color: #ff2400;
     /* Tom mais escuro de vermelho no hover */
     color: #fff;
     transform: scale(1.05);
@@ -259,7 +259,7 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    color: #ff5722;
+    color: #ff2400;
 }
 
 .resume {
@@ -299,7 +299,7 @@ a:hover {
 }
 
 .highlight {
-    color: #ff5722;
+    color: #ff2400;
     /* Cor vermelha */
 }
 
@@ -347,7 +347,7 @@ a:hover {
 }
 
 .navbar a:hover {
-    color: #ff5722;
+    color: #ff2400;
     transform: scale(1.05);
 }
 
@@ -409,7 +409,7 @@ a:hover {
 }
 
 .form-container .highlight {
-    color: #ff5722; /* Cor do texto "Amazing" */
+    color: #ff2400; /* Cor do texto "Amazing" */
 }
 
 .form-container form {
@@ -442,7 +442,7 @@ a:hover {
 }
 
 .form-container button {
-    background-color: #ff5722;
+    background-color: #ff2400;
     color: white;
     border: none;
     padding: 10px;
@@ -453,7 +453,7 @@ a:hover {
 }
 
 .form-container button:hover {
-    background-color: #d83f0c;
+    background-color: #ff2400;
     /* Cor ao passar o mouse */
 }
 
