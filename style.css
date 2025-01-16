@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Sora', sans-serif;
     margin: 0;
@@ -385,4 +387,79 @@ a:hover {
 
 #contact i {
     font-size: 1.5em;
+}
+
+/*CONTATO FORMULARIO*/
+/* Estilos para o formulário de contato */
+.form-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    /* Fundo do formulário */
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Centraliza o formulário na div */
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-container .highlight {
+    color: #ff5722; /* Cor do texto "Amazing" */
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #aaa;
+}
+
+.form-container button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #d83f0c;
+    /* Cor ao passar o mouse */
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
