@@ -55,3 +55,30 @@ a:hover{
     display: inline-block;
     margin-right: 20px;
 }
+.profile-pic {
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+    width: 240px; /* Largura desejada */
+    height: 280px; /* Altura desejada */
+    border-radius: 20px; /* Adiciona o arredondamento de 10px nas bordas */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Adiciona a transição */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% no hover */
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#projects li {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+}
