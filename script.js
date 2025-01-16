@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -9,8 +9,9 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold:0.1
+    threshold: 0.1
 });
+
 sections.forEach((section) => {
     observer.observe(section);
 });

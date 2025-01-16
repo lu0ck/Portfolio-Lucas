@@ -4,47 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Lucas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <section id="intro">
-        <div class="container">
-            <hi> Fazendo suas ideias ganharem forma. </hi>
-            <p>Com paixão por desenvolver experiências interativas e acessíveis, foco em transformar conceitos criativos em produtos práticos e visualmente impactantes.</p>
+    <div class="main-container">
+        <div class="fixed-section">
+            <div class="profile-box">
+                <img src="imagens/profile.jpg" alt="Foto de Perfil" class="profile-pic">
+                <h2>Lucas Paixão</h2>
+                <p class="bio">Desenvolvedor</p>
+                <p class="location">Rio de Janeiro, Brasil</p>
+                <ul class="social-links">
+                    <li><a href="www.linkedin.com/in/lucas-paixão-b0a9b7318" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/lu0ck" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                <button class="btn btn-primary">Vamos conversar!</button>
+            </div>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
-            <h2> Sobre mim: </h2>
-            <img src="/imagens/profile.jpg" alt="Foto de Perfil" class="profile-pic">
-            <p>Desenvolvedor fullstack com expertise em Python, análise de dados e data mining, focado em criar soluções eficientes e inovadoras. </p>
-        </div>
-    </section>
+        <div class="scrollable-section">
+            <section id="intro">
+                <div class="container">
+                    <h1>Da Imaginação à <span class="highlight">Execução</span></h1>
+                    <p>Com paixão por desenvolver experiências interativas e acessíveis, foco em transformar conceitos criativos em produtos práticos e visualmente impactantes.</p>
+                </div>
+            </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2> Projetos </h2>
-            <ul>
-                <li> Projeto de automaçao com integraçao a API em tempo real </li>
-                <li> Site de e-commerce com integraçao a sistema de pagamento </li>
-                <li> Sites para Portfolio de clientes </li>
-                <li> Freelancers </li>
-            </ul>
-        </div>
-    </section>
+            <section id="about">
+                <div class="container">
+                    <h2>Sobre Mim</h2>
+                    <p>Desenvolvedor fullstack com expertise em Python, análise de dados e data mining, focado em criar soluções eficientes e inovadoras para a web.</p>
+                    <div class="resume">
+                        <div class="resume-item">
+                            <span>+1</span>
+                            <span>Anos de Experiência</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>+4</span>
+                            <span>Projetos Completos</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>+2</span>
+                            <span>Clientes pelo Mundo</span>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-primary">Vamos conversar!</button>
+                        <a href="#projects" class="btn btn-secondary">Meus trabalhos. →</a>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Email: lucaspaixaoprofissional@gmail.com</p>
-            <ul class="social-links">
-                <li><a href="link-linkedin">www.linkedin.com/in/lucas-paixão-b0a9b7318</a></li>
-                <li><a href="link-github">https://github.com/lu0ck</a></li>
-            </ul>
+            <section id="projects">
+                <div class="container">
+                    <h2>Projetos</h2>
+                    <ul>
+                        <li>Automaçao com integração a API para fornecimento de informações em tempo real</li>
+                        <li>Site de e-commerce com integração a sistema de pagamento</li>
+                        <li>Sites de Portfolio para clientes</li>
+                        <li>Freelas</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <h2>Contato</h2>
+                    <p>Email: seu-email@example.com</p>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
