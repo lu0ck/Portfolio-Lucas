@@ -1,5 +1,11 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+    
+
+
 body {  /*EDITADO */
     display: flex;
     justify-content: center;
@@ -7,6 +13,7 @@ body {  /*EDITADO */
     min-height: 100vh;
     background-color: #101112;
     color: #eee;
+    font-family: "Inter", ;
   }
 
 .menu-container {
@@ -30,13 +37,19 @@ body {  /*EDITADO */
     box-sizing: border-box;
   }
 
-.fixed-section { /*EDITADO */
+.fixed-section {
+    position: sticky; /* Torna a seção fixa ao rolar */
+    top: 50px; /* Mantém uma margem superior de 20px */
     width: 30%; /* Ocupa 30% da largura */
-    padding: 20px;
+    padding: 20px; /* Espaçamento interno */
+    margin-right: 20px; /* Espaço entre a seção fixa e a seção scrollable */
     background-color: #212121; /* Fundo do box */
-    border-radius: 10px; /* Borda arredondada */
+    border-radius: 20px; /* Borda arredondada */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    max-height: calc(60vh - 40px); /* Garante que o conteúdo caiba na tela */
+    
 }
+
 
 
 /*INICIO SEÇAO PERFIL*/
