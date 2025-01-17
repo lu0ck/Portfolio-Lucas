@@ -124,11 +124,11 @@ body {
 }
 
 section {
-    padding: 80px 0;
-    /* Reduz um pouco o padding */
+    padding: 80px 0; /* Reduz um pouco o padding */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    min-height: 100vh; /* Isso garante que cada seção ocupe a altura da tela */
 }
 
 section.visible {
