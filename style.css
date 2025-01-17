@@ -124,11 +124,12 @@ body {
 }
 
 section {
-    padding: 80px 0; /* Reduz um pouco o padding */
+    padding: 120px 0; /* Ajuste superior para 80px + um pouco de margem */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    min-height: 100vh; /* Isso garante que cada seção ocupe a altura da tela */
+    min-height: 100vh;
+    display: block;
 }
 
 section.visible {
@@ -311,6 +312,15 @@ a:hover {
     /* Espaço entre os botões */
 }
 
+
+
+
+
+
+
+
+
+
 /* INICIO BARRA DE NAvegaçao */
 .navbar {
     position: relative;
@@ -363,7 +373,16 @@ a:hover {
     font-size: 0.8em;
     opacity: 1;
 }
+
 /*BARRA DE NAVEGAÇAO FIM*/
+
+
+
+
+
+
+
+
 .contact-icon {
     margin-right: 0px;
 }
@@ -463,3 +482,6 @@ a:hover {
     align-items: center;
     text-align: center;
 }
+
+
+
