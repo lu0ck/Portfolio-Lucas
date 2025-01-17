@@ -1,14 +1,13 @@
 
 
-body {
-    font-family: 'Sora', sans-serif;
-    margin: 0;
-    padding: 0;
+body {  /*EDITADO */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     background-color: #101112;
-    /* Cor de fundo escura */
     color: #eee;
-    line-height: 1.6;
-}
+  }
 
 .menu-container {
     position: fixed;
@@ -22,36 +21,30 @@ body {
     padding: 15px 0;
 }
 
-.main-container {
+.main-container { /*EDITADO */
     display: flex;
-    height: 100vh;
-}
-
-.fixed-section {
-    background-color: #101112;
-    color: #eee;
-    position: fixed;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 80px 20px 20px 20px;
-     /*Adiciona padding superior */
+    max-width: 1200px; /* Centraliza a largura total */
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
     box-sizing: border-box;
-    align-items: normal;
-    min-height: 100vh;
+  }
+
+.fixed-section { /*EDITADO */
+    width: 30%; /* Ocupa 30% da largura */
+    padding: 20px;
+    background-color: #212121; /* Fundo do box */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
 }
 
 
-
-.profile-box {
+/*INICIO SEÇAO PERFIL*/
+.profile-box { /*EDITADO */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 65vh;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
+    
 }
 
 .profile-pic {
@@ -60,11 +53,12 @@ body {
     /* Sobe a foto e diminui a margem inferior */
     width: 180px;
     /* Reduz o tamanho da foto */
-    height: 210px;
+    height: 200px;
     /* Reduz o tamanho da foto */
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease;
+    margin-bottom: 15px;
 }
 
 .profile-pic:hover {
@@ -72,13 +66,18 @@ body {
 }
 
 .profile-box h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     /* Diminui o tamanho do nome */
     font-weight: 600;
     /* Diminui o peso da fonte */
     margin-bottom: 5px;
     /* Reduz o espaçamento */
 }
+
+.profile-box P{
+    font-size: 1.2em;
+}
+/*FIM DA SEÇÃO DE PERFIL */
 
 .bio,
 .location {
@@ -106,17 +105,24 @@ body {
     color: #eee;
     text-decoration: none;
     font-size: 20px;
+    gap: 10px;
 }
 
-.scrollable-section {
-    width: 75%;
-    overflow-y: auto;
-    padding: 100px 20px 20px 20px;
-   
-    box-sizing: border-box;
-    margin-left: auto;
+.scrollable-section { /*EDITADO*/
+    width: 65%;
+    padding: 20px;
+    margin-left: 5%;
+    
 }
 
+.scrollable-section section { /*EDITADO*/
+    margin-bottom: 40px;
+}
+
+.scrollable-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
 
 
 .container {
@@ -230,7 +236,7 @@ a:hover {
     color: #ff2400;
 }
 
-.btn {
+.btn { /*BOTAO VAMOS CONVERSAR*/
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -240,7 +246,7 @@ a:hover {
     width: fit-content;
 }
 
-.btn-primary {
+.btn-primary { 
     background-color: #ff2400;
     /* Cor vermelha */
     color: #fff;
