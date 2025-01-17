@@ -143,17 +143,17 @@ body {  /*EDITADO */
 }
 
 section {
-    padding: 120px 0; /* Ajuste superior para 80px + um pouco de margem */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    min-height: 100vh;
-    display: block;
+    padding: 60px 0; /* Reduz o espaçamento superior e inferior */
+    margin: 0; /* Remove margens extras */
+    opacity: 0; /* Para animação de fade-in */
+    transform: translateY(20px); /* Reduz o deslocamento inicial */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Mais suave */
+    min-height: auto; /* Ajuste para remover altura mínima fixa */
 }
 
 section.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Aparece quando visível */
+    transform: translateY(0); /* Fica na posição original */
 }
 
 h1,
