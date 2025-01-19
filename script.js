@@ -2,19 +2,22 @@ const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navbar a');
 
 // Intersection Observer para animação de aparecer
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        } else {
-            entry.target.classList.remove('visible');
-        }
-    });
-}, {
-    threshold: 0.1 // Ajuste conforme necessário
-});
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    },
+    {
+        threshold: 0.15, // Aparece quando 15% da seção está visível
+    }
+);
 
-sections.forEach(section => {
+sections.forEach((section) => {
     observer.observe(section);
 });
 
